@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5857C0BB-E35B-4A2D-9B75-0D87774CAF72}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>pluralsight_csharp6_from_scratch</RootNamespace>
+    <AssemblyName>pluralsight_csharp6_from_scratch</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>KeyLinqOperatorsDemo.Worker</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractDemo.cs" />
+    <Compile Include="ArrayDemo.cs" />
+    <Compile Include="AsyncDemo.cs" />
+    <Compile Include="DelegateDemo.cs" />
+    <Compile Include="Employee2.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EnumDemo.cs" />
+    <Compile Include="EventsDemo.cs" />
+    <Compile Include="InheritanceDemo.cs" />
+    <Compile Include="InterfacesDemo.cs" />
+    <Compile Include="IStorable.cs" />
+    <Compile Include="KeyLinqOperatorsDemo.cs" />
+    <Compile Include="LambdaExpDemo.cs" />
+    <Compile Include="LinqDemo.cs" />
+    <Compile Include="ListDemo.cs" />
+    <Compile Include="OperatorsDemo.cs" />
+    <Compile Include="StaticDemo.cs" />
+    <Compile Include="TryCatchDemo.cs" />
+    <Compile Include="VariableDemo1.cs" />
+    <Compile Include="HelloWorld.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
